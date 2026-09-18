@@ -14,10 +14,10 @@
  ***********************************/
 
  // Theme color field
-Epsilon_Customizer::add_field(
+Colorlib_Customizer::add_field(
     'martine_theme_color',
     array(
-        'type'        => 'epsilon-color-picker',
+        'type'        => 'colorlib-color-picker',
         'label'       => esc_html__( 'Theme Color', 'martine' ),
         'description' => esc_html__( 'Select the theme color.', 'martine' ),
         'sanitize_callback' => 'sanitize_text_field',
@@ -27,10 +27,10 @@ Epsilon_Customizer::add_field(
 );
 
 // Secondary Theme color field
-Epsilon_Customizer::add_field(
+Colorlib_Customizer::add_field(
     'martine_secondary_theme_color',
     array(
-        'type'        => 'epsilon-color-picker',
+        'type'        => 'colorlib-color-picker',
         'label'       => esc_html__( 'Secondary Theme Color', 'martine' ),
         'description' => esc_html__( 'Select the secondary theme color.', 'martine' ),
         'sanitize_callback' => 'sanitize_text_field',
@@ -40,10 +40,10 @@ Epsilon_Customizer::add_field(
 );
 
 // Header Top section
-Epsilon_Customizer::add_field(
+Colorlib_Customizer::add_field(
     'header_top_separator',
     array(
-        'type'        => 'epsilon-separator',
+        'type'        => 'colorlib-separator',
         'label'       => esc_html__( 'Header Top Section', 'martine' ),
         'section'     => 'martine_header_section',
         'default'     => true,
@@ -52,10 +52,10 @@ Epsilon_Customizer::add_field(
 );
 
 // Header Top Bar Show/Hide
-Epsilon_Customizer::add_field(
+Colorlib_Customizer::add_field(
     'martine_header_top_bar_toggle',
     array(
-        'type'        => 'epsilon-toggle',
+        'type'        => 'colorlib-toggle',
         'label'       => esc_html__( 'Header Top Bar Show/Hide', 'martine' ),
         'section'     => 'martine_header_section',
         'default'     => true,
@@ -64,10 +64,10 @@ Epsilon_Customizer::add_field(
 
 
 // Header social profile & phone number
-Epsilon_Customizer::add_field(
+Colorlib_Customizer::add_field(
     'header_top_soical_phone_separator',
     array(
-        'type'        => 'epsilon-separator',
+        'type'        => 'colorlib-separator',
         'label'       => esc_html__( 'Header Top Social Profile & Phone Number Section', 'martine' ),
         'section'     => 'martine_header_section',
         'default'     => true,
@@ -76,10 +76,10 @@ Epsilon_Customizer::add_field(
 );
 
 // Header Social Show/Hide
-Epsilon_Customizer::add_field(
+Colorlib_Customizer::add_field(
     'martine_social_profile_toggle',
     array(
-        'type'        => 'epsilon-toggle',
+        'type'        => 'colorlib-toggle',
         'label'       => esc_html__( 'Header Social Profile Show/Hide', 'martine' ),
         'section'     => 'martine_header_section',
         'default'     => true,
@@ -87,10 +87,10 @@ Epsilon_Customizer::add_field(
 );
 
 //Social Profile links
-Epsilon_Customizer::add_field(
+Colorlib_Customizer::add_field(
 	'martine_header_social',
 	array(
-		'type'         => 'epsilon-repeater',
+		'type'         => 'colorlib-repeater',
 		'section'      => 'martine_header_section',
 		'label'        => esc_html__( 'Social Profile Links', 'martine' ),
         'button_label' => esc_html__( 'Add new social link', 'martine' ),
@@ -135,7 +135,7 @@ Epsilon_Customizer::add_field(
 			),
 			'social_icon'        => array(
 				'label'   => esc_html__( 'Icon', 'beko' ),
-				'type'    => 'epsilon-icon-picker',
+				'type'    => 'colorlib-icon-picker',
 				'default' => 'fa fa-twitter',
 			),
 			
@@ -145,7 +145,7 @@ Epsilon_Customizer::add_field(
 
 
 // Header Phone Number
-Epsilon_Customizer::add_field(
+Colorlib_Customizer::add_field(
     'header_phone_number',
     array(
         'type'              => 'text',
@@ -158,10 +158,10 @@ Epsilon_Customizer::add_field(
 
 
 // Header book now button
-Epsilon_Customizer::add_field(
+Colorlib_Customizer::add_field(
     'header_book_now_btn_separator',
     array(
-        'type'        => 'epsilon-separator',
+        'type'        => 'colorlib-separator',
         'label'       => esc_html__( 'Header Book Now Button Section', 'martine' ),
         'section'     => 'martine_header_section',
         'default'     => true,
@@ -170,10 +170,10 @@ Epsilon_Customizer::add_field(
 );
 
 // Header right button field
-Epsilon_Customizer::add_field(
+Colorlib_Customizer::add_field(
     'martine_header_btn',
     array(
-        'type'        => 'epsilon-toggle',
+        'type'        => 'colorlib-toggle',
         'label'       => esc_html__( 'Header button show/hide', 'martine' ),
         'section'     => 'martine_header_section',
         'default'     => true
@@ -181,7 +181,7 @@ Epsilon_Customizer::add_field(
 );
 
 // Header right button label
-Epsilon_Customizer::add_field(
+Colorlib_Customizer::add_field(
     'header_btn_label',
     array(
         'type'              => 'text',
@@ -193,7 +193,7 @@ Epsilon_Customizer::add_field(
 );
 
 // Header right button url
-Epsilon_Customizer::add_field(
+Colorlib_Customizer::add_field(
     'booking_btn_url',
     array(
         'type'              => 'text',
@@ -205,10 +205,10 @@ Epsilon_Customizer::add_field(
 );
 
 // Header right button hover background color
-Epsilon_Customizer::add_field(
+Colorlib_Customizer::add_field(
     'martine_booking_btn_bg_color',
     array(
-        'type'        => 'epsilon-color-picker',
+        'type'        => 'colorlib-color-picker',
         'label'       => esc_html__( 'Header Button Hover BG Color', 'martine' ),
         'sanitize_callback' => 'sanitize_text_field',
         'section'     => 'martine_header_section',
@@ -217,10 +217,10 @@ Epsilon_Customizer::add_field(
 );
 
 // Header color sections
-Epsilon_Customizer::add_field(
+Colorlib_Customizer::add_field(
     'header_color_section',
     array(
-        'type'        => 'epsilon-separator',
+        'type'        => 'colorlib-separator',
         'label'       => esc_html__( 'Header Color Section', 'martine' ),
         'section'     => 'martine_header_section',
 
@@ -228,10 +228,10 @@ Epsilon_Customizer::add_field(
 );
  
 // Header background color field
-Epsilon_Customizer::add_field(
+Colorlib_Customizer::add_field(
     'martine_header_bg_color',
     array(
-        'type'        => 'epsilon-color-picker',
+        'type'        => 'colorlib-color-picker',
         'label'       => esc_html__( 'Sticky Header BG Color', 'martine' ),
         'description' => esc_html__( 'Select the header background color.', 'martine' ),
         'sanitize_callback' => 'sanitize_text_field',
@@ -241,10 +241,10 @@ Epsilon_Customizer::add_field(
 );
 
 // Header nav menu color field
-Epsilon_Customizer::add_field(
+Colorlib_Customizer::add_field(
     'martine_header_menu_color',
     array(
-        'type'        => 'epsilon-color-picker',
+        'type'        => 'colorlib-color-picker',
         'label'       => esc_html__( 'Header menu color', 'martine' ),
         'sanitize_callback' => 'sanitize_text_field',
         'section'     => 'martine_header_section',
@@ -253,10 +253,10 @@ Epsilon_Customizer::add_field(
 );
 
 // Header nav menu hover color field
-Epsilon_Customizer::add_field(
+Colorlib_Customizer::add_field(
     'martine_header_menu_hover_color',
     array(
-        'type'        => 'epsilon-color-picker',
+        'type'        => 'colorlib-color-picker',
         'label'       => esc_html__( 'Header menu hover color', 'martine' ),
         'sanitize_callback' => 'sanitize_text_field',
         'section'     => 'martine_header_section',
@@ -265,10 +265,10 @@ Epsilon_Customizer::add_field(
 );
 
 // Header dropdown menu bg color field
-Epsilon_Customizer::add_field(
+Colorlib_Customizer::add_field(
     'martine_header_drop_menu_bg_color',
     array(
-        'type'        => 'epsilon-color-picker',
+        'type'        => 'colorlib-color-picker',
         'label'       => esc_html__( 'Dropdown menu BG color', 'martine' ),
         'sanitize_callback' => 'sanitize_text_field',
         'section'     => 'martine_header_section',
@@ -277,10 +277,10 @@ Epsilon_Customizer::add_field(
 );
 
 // Header dropdown menu color field
-Epsilon_Customizer::add_field(
+Colorlib_Customizer::add_field(
     'martine_header_drop_menu_color',
     array(
-        'type'        => 'epsilon-color-picker',
+        'type'        => 'colorlib-color-picker',
         'label'       => esc_html__( 'Dropdown menu color', 'martine' ),
         'sanitize_callback' => 'sanitize_text_field',
         'section'     => 'martine_header_section',
@@ -289,10 +289,10 @@ Epsilon_Customizer::add_field(
 );
 
 // Header dropdown menu hover color field
-Epsilon_Customizer::add_field(
+Colorlib_Customizer::add_field(
     'martine_header_drop_menu_hover_color',
     array(
-        'type'        => 'epsilon-color-picker',
+        'type'        => 'colorlib-color-picker',
         'label'       => esc_html__( 'Dropdown menu hover color', 'martine' ),
         'sanitize_callback' => 'sanitize_text_field',
         'section'     => 'martine_header_section',
@@ -305,7 +305,7 @@ Epsilon_Customizer::add_field(
  ***********************************/
  
 // Post excerpt length field
-Epsilon_Customizer::add_field(
+Colorlib_Customizer::add_field(
     'martine_excerpt_length',
     array(
         'type'        => 'text',
@@ -318,28 +318,28 @@ Epsilon_Customizer::add_field(
 );
 
 // Blog single page social share icon
-Epsilon_Customizer::add_field(
+Colorlib_Customizer::add_field(
     'martine_blog_meta',
     array(
-        'type'        => 'epsilon-toggle',
+        'type'        => 'colorlib-toggle',
         'label'       => esc_html__( 'Blog page post meta show/hide', 'martine' ),
         'section'     => 'martine_blog_section',
         'default'     => true
     )
 );
-Epsilon_Customizer::add_field(
+Colorlib_Customizer::add_field(
     'martine_like_btn',
     array(
-        'type'        => 'epsilon-toggle',
+        'type'        => 'colorlib-toggle',
         'label'       => esc_html__( 'Blog Single Page Like Button show/hide', 'martine' ),
         'section'     => 'martine_blog_section',
         'default'     => true
     )
 );
-Epsilon_Customizer::add_field(
+Colorlib_Customizer::add_field(
     'martine_blog_share',
     array(
-        'type'        => 'epsilon-toggle',
+        'type'        => 'colorlib-toggle',
         'label'       => esc_html__( 'Blog Single Page Share show/hide', 'martine' ),
         'section'     => 'martine_blog_section',
         'default'     => true
@@ -351,7 +351,7 @@ Epsilon_Customizer::add_field(
  ***********************************/
 
 // 404 text #1 field
-Epsilon_Customizer::add_field(
+Colorlib_Customizer::add_field(
     'martine_fof_titleone',
     array(
         'type'              => 'text',
@@ -362,7 +362,7 @@ Epsilon_Customizer::add_field(
     )
 );
 // 404 text #2 field
-Epsilon_Customizer::add_field(
+Colorlib_Customizer::add_field(
     'martine_fof_titletwo',
     array(
         'type'              => 'text',
@@ -373,10 +373,10 @@ Epsilon_Customizer::add_field(
     )
 );
 // 404 text #1 color field
-Epsilon_Customizer::add_field(
+Colorlib_Customizer::add_field(
     'martine_fof_textone_color',
     array(
-        'type'        => 'epsilon-color-picker',
+        'type'        => 'colorlib-color-picker',
         'label'       => esc_html__( '404 Text #1 Color', 'martine' ),
         'sanitize_callback' => 'sanitize_text_field',
         'section'     => 'martine_fof_section',
@@ -384,10 +384,10 @@ Epsilon_Customizer::add_field(
     )
 );
 // 404 text #2 color field
-Epsilon_Customizer::add_field(
+Colorlib_Customizer::add_field(
     'martine_fof_texttwo_color',
     array(
-        'type'        => 'epsilon-color-picker',
+        'type'        => 'colorlib-color-picker',
         'label'       => esc_html__( '404 Text #2 Color', 'martine' ),
         'sanitize_callback' => 'sanitize_text_field',
         'section'     => 'martine_fof_section',
@@ -395,10 +395,10 @@ Epsilon_Customizer::add_field(
     )
 );
 // 404 background color field
-Epsilon_Customizer::add_field(
+Colorlib_Customizer::add_field(
     'martine_fof_bg_color',
     array(
-        'type'        => 'epsilon-color-picker',
+        'type'        => 'colorlib-color-picker',
         'label'       => esc_html__( '404 Page Background Color', 'martine' ),
         'sanitize_callback' => 'sanitize_text_field',
         'section'     => 'martine_fof_section',
@@ -411,10 +411,10 @@ Epsilon_Customizer::add_field(
  ***********************************/
 
 // Footer Widget section
-Epsilon_Customizer::add_field(
+Colorlib_Customizer::add_field(
     'footer_widget_separator',
     array(
-        'type'        => 'epsilon-separator',
+        'type'        => 'colorlib-separator',
         'label'       => esc_html__( 'Footer Widget Section', 'martine' ),
         'section'     => 'martine_footer_section',
 
@@ -422,10 +422,10 @@ Epsilon_Customizer::add_field(
 );
 
 // Footer widget toggle field
-Epsilon_Customizer::add_field(
+Colorlib_Customizer::add_field(
     'martine_footer_widget_toggle',
     array(
-        'type'        => 'epsilon-toggle',
+        'type'        => 'colorlib-toggle',
         'label'       => esc_html__( 'Footer widget show/hide', 'martine' ),
         'description' => esc_html__( 'Toggle to display footer widgets.', 'martine' ),
         'section'     => 'martine_footer_section',
@@ -434,10 +434,10 @@ Epsilon_Customizer::add_field(
 );
 
 // Footer Copyright section
-Epsilon_Customizer::add_field(
+Colorlib_Customizer::add_field(
     'martine_footer_copyright_separator',
     array(
-        'type'        => 'epsilon-separator',
+        'type'        => 'colorlib-separator',
         'label'       => esc_html__( 'Footer Copyright Section', 'martine' ),
         'section'     => 'martine_footer_section',
         'default'     => true,
@@ -449,10 +449,10 @@ Epsilon_Customizer::add_field(
 // Copy right text
 $url = 'https://colorlib.com/';
 $copyText = sprintf( __( 'Theme by %s colorlib %s Copyright &copy; %s  |  All rights reserved.', 'martine' ), '<a target="_blank" href="' . esc_url( $url ) . '">', '</a>', date( 'Y' ) );
-Epsilon_Customizer::add_field(
+Colorlib_Customizer::add_field(
     'martine_footer_copyright_text',
     array(
-        'type'        => 'epsilon-text-editor',
+        'type'        => 'colorlib-text-editor',
         'label'       => esc_html__( 'Footer copyright text', 'martine' ),
         'section'     => 'martine_footer_section',
         'default'     => wp_kses_post( $copyText ),
@@ -460,10 +460,10 @@ Epsilon_Customizer::add_field(
 );
 
 // Footer widget background color field
-Epsilon_Customizer::add_field(
+Colorlib_Customizer::add_field(
     'martine_footer_bg_color',
     array(
-        'type'        => 'epsilon-color-picker',
+        'type'        => 'colorlib-color-picker',
         'label'       => esc_html__( 'Footer Background Color', 'martine' ),
         'sanitize_callback' => 'sanitize_text_field',
         'section'     => 'martine_footer_section',
@@ -472,10 +472,10 @@ Epsilon_Customizer::add_field(
 );
 
 // Footer widget text color field
-Epsilon_Customizer::add_field(
+Colorlib_Customizer::add_field(
     'martine_footer_widget_text_color',
     array(
-        'type'        => 'epsilon-color-picker',
+        'type'        => 'colorlib-color-picker',
         'label'       => esc_html__( 'Footer Text Color', 'martine' ),
         'sanitize_callback' => 'sanitize_text_field',
         'section'     => 'martine_footer_section',
@@ -484,10 +484,10 @@ Epsilon_Customizer::add_field(
 );
 
 // Footer widget title color field
-Epsilon_Customizer::add_field(
+Colorlib_Customizer::add_field(
     'martine_footer_widget_title_color',
     array(
-        'type'        => 'epsilon-color-picker',
+        'type'        => 'colorlib-color-picker',
         'label'       => esc_html__( 'Footer Widget Title Color', 'martine' ),
         'sanitize_callback' => 'sanitize_text_field',
         'section'     => 'martine_footer_section',
@@ -496,10 +496,10 @@ Epsilon_Customizer::add_field(
 );
 
 // Footer widget anchor color field
-Epsilon_Customizer::add_field(
+Colorlib_Customizer::add_field(
     'martine_footer_widget_anchor_color',
     array(
-        'type'        => 'epsilon-color-picker',
+        'type'        => 'colorlib-color-picker',
         'label'       => esc_html__( 'Footer Anchor Color', 'martine' ),
         'sanitize_callback' => 'sanitize_text_field',
         'section'     => 'martine_footer_section',
@@ -508,10 +508,10 @@ Epsilon_Customizer::add_field(
 );
 
 // Footer widget anchor hover color field
-Epsilon_Customizer::add_field(
+Colorlib_Customizer::add_field(
     'martine_footer_widget_anchor_hover_color',
     array(
-        'type'        => 'epsilon-color-picker',
+        'type'        => 'colorlib-color-picker',
         'label'       => esc_html__( 'Footer Anchor Hover Color', 'martine' ),
         'sanitize_callback' => 'sanitize_text_field',
         'section'     => 'martine_footer_section',
