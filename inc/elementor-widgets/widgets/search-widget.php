@@ -154,13 +154,13 @@ class Martine_Search_Widget extends Widget_Base {
                     <div class="booking_menu">
                         <ul class="nav nav-tabs" id="myTab" role="tablist">
                             <li class="nav-item">
-                            <a class="nav-link active" id="hotel-tab" data-toggle="tab" href="#hotel" role="tab" aria-controls="hotel" aria-selected="true">hotel</a>
+                            <a class="nav-link active" id="hotel-tab" data-bs-toggle="tab" href="#hotel" role="tab" aria-controls="hotel" aria-selected="true">hotel</a>
                             </li>
                             <li class="nav-item">
-                            <a class="nav-link" id="tricket-tab" data-toggle="tab" href="#tricket" role="tab" aria-controls="tricket" aria-selected="false">ticket</a>
+                            <a class="nav-link" id="tricket-tab" data-bs-toggle="tab" href="#tricket" role="tab" aria-controls="tricket" aria-selected="false">ticket</a>
                             </li>
                             <li class="nav-item">
-                            <a class="nav-link" id="place-tab" data-toggle="tab" href="#place" role="tab" aria-controls="place" aria-selected="false">place</a>
+                            <a class="nav-link" id="place-tab" data-bs-toggle="tab" href="#place" role="tab" aria-controls="place" aria-selected="false">place</a>
                             </li>
                         </ul>
                     </div>
