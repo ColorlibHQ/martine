@@ -14,6 +14,7 @@ function martine_sl_enqueue_scripts() {
 
 	wp_localize_script( 'martine-post-likes', 'simpleLikes', array(
 		'ajaxurl' => admin_url( 'admin-ajax.php' ),
+		'like'    => esc_html__( 'Like', 'martine' ),
 		'unlike'  => esc_html__( 'Unlike', 'martine' )
 	) );
 }
