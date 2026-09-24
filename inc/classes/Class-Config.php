@@ -257,13 +257,6 @@
 						'in_footer' 	=> true
 					),
 					array(
-						'handler'		=> 'martine-jquery-nice-select-js',
-						'file' 			=> $jsPath.'jquery.nice-select.min.js',
-						'dependency' 	=> array( 'jquery' ),
-						'version' 		=> '1.0',
-						'in_footer' 	=> true
-					),
-					array(
 						'handler'		=> 'martine-gijgo-min-js',
 						'file' 			=> $jsPath.'gijgo.min.js',
 						'dependency' 	=> array( 'jquery' ),
@@ -277,19 +270,19 @@
 						'version' 		=> '1.0',
 						'in_footer' 	=> true
 					),
+
 					array(
-						'handler'		=> 'martine-instagram-feed-js',
-						'file' 			=> $jsPath.'jquery.instagramFeed.min.js',
-						'dependency' 	=> array( 'jquery' ),
-						'version' 		=> '1.0',
+						'handler'		=> 'martine-ui-js',
+						'file' 			=> $jsPath.'colorlib-ui.js',
+						'dependency' 	=> array(),
+						'version' 		=> '2.1.1',
 						'in_footer' 	=> true
 					),
-
 					array(
 						'handler'		=> 'martine-custom',
 						'file' 			=> $jsPath.'custom.js',
-						'dependency' 	=> array( 'jquery' ),
-						'version' 		=> $this->martine_version,
+						'dependency' 	=> array( 'jquery', 'martine-ui-js' ),
+						'version' 		=> $this->martine_version . '-s1',
 						'in_footer' 	=> true
 					),
 
