@@ -229,14 +229,23 @@ class Martine_Gallery extends Widget_Base {
         if( \Elementor\Plugin::$instance->editor->is_edit_mode() === true  ) {
         ?>
         <script>
-        ( function( $ ){
-            $('.gallery_img').magnificPopup({
-                type: 'image',
-                gallery:{
-                enabled:true
-                }
-            });
-        })(jQuery);
+        (function () {
+            function run() {
+                var UI = window.ColorlibUI;
+                if (!UI) return;
+                UI.magnific('.gallery_img', {
+                    type: 'image',
+                    gallery: {
+                        enabled: true
+                    }
+                });
+            }
+            if (document.readyState === 'loading') {
+                document.addEventListener('DOMContentLoaded', run);
+            } else {
+                run();
+            }
+        })();
         </script>
         <?php 
         }

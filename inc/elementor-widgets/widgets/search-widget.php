@@ -282,14 +282,18 @@ class Martine_Search_Widget extends Widget_Base {
         if( \Elementor\Plugin::$instance->editor->is_edit_mode() === true  ) {
         ?>
         <script>
-        ( function( $ ){
-            $('#datepicker_1').datepicker();
-            $('#datepicker_2').datepicker();  
-            $('#datepicker_3').datepicker();
-            $('#datepicker_4').datepicker();  
-            $('#datepicker_5').datepicker();
-            $('#datepicker_6').datepicker();
-        })(jQuery);
+        (function () {
+            function run() {
+                var UI = window.ColorlibUI;
+                if (!UI) return;
+                UI.datepicker('#datepicker_1, #datepicker_2, #datepicker_3, #datepicker_4, #datepicker_5, #datepicker_6');
+            }
+            if (document.readyState === 'loading') {
+                document.addEventListener('DOMContentLoaded', run);
+            } else {
+                run();
+            }
+        })();
         </script>
         <?php 
         }

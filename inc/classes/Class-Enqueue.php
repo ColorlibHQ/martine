@@ -80,7 +80,7 @@
 							$file = $script['file'];
 						}
 						// Check dependency
-						$dependency = array('jquery');
+						$dependency = array();
 						if( !empty( $script['dependency'] ) ){
 							$dependency = $script['dependency'];
 						}
@@ -100,13 +100,6 @@
 							wp_register_script( esc_html( $handler ), esc_url( $file ), $dependency, esc_html( $version ), esc_html( $in_footer ) );
 						}else{							
 							wp_enqueue_script( esc_html( $handler ), esc_url( $file ), $dependency, esc_html( $version ), esc_html( $in_footer )  );
-
-							// Gijgo reaches for a global $, which WordPress's jQuery (in no-conflict
-							// mode) does not provide. The theme used to swap in its own jQuery 1.12
-							// for this; aliasing it keeps WordPress's current jQuery instead.
-							if ( 'martine-gijgo-min-js' === $handler ) {
-								wp_add_inline_script( $handler, 'window.$ = window.$ || window.jQuery;', 'before' );
-							}
 						}
 						
 						// Condational Script

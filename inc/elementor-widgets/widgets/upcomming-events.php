@@ -254,36 +254,42 @@ class Martine_Events extends Widget_Base {
         if( \Elementor\Plugin::$instance->editor->is_edit_mode() === true  ) {
         ?>
         <script>
-        ( function( $ ){
-            var event = $('.event_slider');
-            if (event.length) {
-                event.owlCarousel({
-                items: 1,
-                loop: true,
-                dots: false,
-                autoplay: true,
-                margin: 40,
-                autoplayHoverPause: true,
-                autoplayTimeout: 5000,
-                nav: true,
-                navText: [
-                    '<i class="ti-angle-left"></i>',
-                    '<i class="ti-angle-right"></i>'
-                ],
-                responsive: {
-                    0: {
-                    nav: false
-                    },
-                    600: {
-                    nav: false
-                    },
-                    991: {
-                    nav: true
+        (function () {
+            function run() {
+                var UI = window.ColorlibUI;
+                if (!UI) return;
+                UI.owl('.event_slider', {
+                    items: 1,
+                    loop: true,
+                    dots: false,
+                    autoplay: true,
+                    margin: 40,
+                    autoplayHoverPause: true,
+                    autoplayTimeout: 5000,
+                    nav: true,
+                    navText: [
+                        '<i class="ti-angle-left"></i>',
+                        '<i class="ti-angle-right"></i>'
+                    ],
+                    responsive: {
+                        0: {
+                            nav: false
+                        },
+                        600: {
+                            nav: false
+                        },
+                        991: {
+                            nav: true
+                        }
                     }
-                }
                 });
             }
-        })(jQuery);
+            if (document.readyState === 'loading') {
+                document.addEventListener('DOMContentLoaded', run);
+            } else {
+                run();
+            }
+        })();
         </script>
         <?php 
         }
