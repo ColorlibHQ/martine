@@ -189,7 +189,7 @@
 						'handler'		=> 'martine-flaticon',
 						'file' 			=> $cssPath.'flaticon.css',
 						'dependency' 	=> array(),
-						'version' 		=> '1.0',
+						'version' 		=> '1.0-s3',
 					),
 					array(
 						'handler'		=> 'martine-magnific-popup-css',
@@ -201,7 +201,7 @@
 						'handler'		=> 'martine-gijgo-min-css',
 						'file' 			=> $cssPath.'gijgo.min.css',
 						'dependency' 	=> array(),
-						'version' 		=> '1.0',
+						'version' 		=> '1.0-s3',
 					),
 					array(
 						'handler'		=> 'martine-nice-select-css',
@@ -219,13 +219,13 @@
 						'handler'		=> 'martine-default-css',
 						'file' 			=> $cssPath.'default.css',
 						'dependency' 	=> array(),
-						'version' 		=> '1.0',
+						'version' 		=> '1.0-s3',
 					),
 					array(
 						'handler'		=> 'martine-style-css',
 						'file' 			=> $cssPath.'style.css',
 						'dependency' 	=> array(),
-						'version' 		=> '1.0',
+						'version' 		=> '1.0-s3',
 					),
 					
 					array(
